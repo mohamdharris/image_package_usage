@@ -10,7 +10,7 @@ class ImagePackage extends StatefulWidget {
 
 class _ImagePackageState extends State<ImagePackage> {
     Future<void> loadAsset() async {
-    final assetData = await rootBundle.load('lib/images/logo.jpg');
+    final assetData = await rootBundle.load('lib/images/logo.png');
 
     // Do something with the asset data
     print("asserts loading from load Asset");
@@ -21,7 +21,7 @@ class _ImagePackageState extends State<ImagePackage> {
       height: MediaQuery.of(context).size.height*0.50,
       width: MediaQuery.of(context).size.width*0.50,
       // color: Colors.amber,
-      decoration: const BoxDecoration(image: DecorationImage(image: AssetImage('lib/images/logo.jpg'))),
+      decoration: const BoxDecoration(image: DecorationImage(image: AssetImage('lib/images/logo.png'))),
       // child: const Image(image: NetworkImage('https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png')),
     );
   }
